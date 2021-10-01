@@ -1,0 +1,97 @@
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-145deg, #5f0588, #20042b, #053636, #048c91);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+    h1 {
+   text-align: center;
+   font-size: 25px;
+   line-height: 1.2rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color:#ffffff;
+  }
+
+
+h2, h3{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#ffffff;
+   }
+
+.piano {
+    background: black;
+    padding: 2em;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.key {
+    width: 3.5em;
+    height: 20em;
+    position: relative;
+    background: linear-gradient( 90deg, #ffffff 0%, #6d6d6d 40%, #484848 40%, #484848 50%, #484848 60%, #343434 60%, #343434 100%);
+    border-radius: 10px;
+}
+
+
+.key-active {
+    background: linear-gradient( 90deg, #343434 0%, #343434 40%, #484848 40%, #484848 50%, #484848 50%, #484848 60%, #ffffff 60%, #ffffff 100%);
+}
+
+
+.top {
+    height: 12em;
+    width: 3.5em;
+    margin: 0 -1em 0 -1em;
+    z-index: 1;
+    position: relative;
+}
+
+.key-active {
+    background: linear-gradient( 90deg, #343434 0%, #343434 40%, #484848 40%, #484848 50%, #484848 50%, #484848 60%, #ffffff 60%, #ffffff 100%);
+}
+
+.playing {
+    transform: scale(1.1);
+    border-bottom-color: #ae00ff;
+    box-shadow: 0 0 50px #ae00ff;
+    transition: all 0.2s ease;
+    
+}
+
+
+.sound {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #ae00ff;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#ffffff;
+}
